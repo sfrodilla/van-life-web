@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #FFF7ED;
 }
 
 
@@ -22,7 +23,6 @@ header {
     align-items: center;
     padding: 26px;
     height: 110px;
-    background-color: #FFF7ED;
 }
 
 .title-container {
@@ -59,12 +59,16 @@ header>nav>a {
 /* Main content  */
 
 main {
-    padding: 66px 26px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+}
 
+.home-container {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 26px;
     background-image: url("/images/van-home.png");
     background-color: rgba(0, 0, 0, 0.46);
     background-blend-mode: darken;
@@ -74,7 +78,7 @@ main {
     color: white;
 }
 
-main>h2 {
+h2 {
     font-weight: 800;
     font-size: 2.25rem;
     flex-wrap: wrap;
@@ -83,18 +87,18 @@ main>h2 {
     margin-bottom: 23px;
 }
 
-main>section {
+.home-container>section {
     display: flex;
     flex-direction: column;
     gap: 52px;
 }
 
-section>span {
+.home-container>section>span {
     font-weight: 500;
     line-height: 24px;
 }
 
-section>button {
+.home-container>section>button {
     background-color: #FF8C38;
     border: none;
     border-radius: 5px;
@@ -106,7 +110,25 @@ section>button {
 
 }
 
+article {
+    width: 100%;
+}
+
+article>section {
+    padding: 48px 26px;
+}
+
+article>section>p {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    color: #161616;
+    margin-top: 0;
+}
+
 .image-container {
+    width: 100%;
     min-height: 235px;
 }
 
@@ -115,6 +137,45 @@ section>button {
     object-fit: cover;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+div.button-container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 37px;
+
+    background-color: #FFCC8D;
+}
+
+div.button-container>h4 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    white-space: pre-line;
+
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+div.button-container>button {
+    align-self: flex-start;
+    background-color: #161616;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+    padding: 12px 22px;
+
+    line-height: 24px;
+    font-weight: 700;
+    font-size: 1rem;
+}
 
 
 /* Footer styling */
