@@ -151,6 +151,8 @@ div.button-container {
     flex-direction: column;
     padding: 32px 37px;
 
+    border-radius: 5px;
+
     background-color: #FFCC8D;
 }
 
