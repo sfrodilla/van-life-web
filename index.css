@@ -25,10 +25,6 @@ header {
     height: 110px;
 }
 
-.title-container {
-    flex: 1;
-}
-
 .title {
     font-weight: 900;
     font-size: 1.6rem;
@@ -47,6 +43,7 @@ a.selected {
 header>nav {
     display: flex;
     gap: 12px;
+    margin-left: auto;
 }
 
 header>nav>a {
@@ -177,6 +174,107 @@ div.button-container>button {
     line-height: 24px;
     font-weight: 700;
     font-size: 1rem;
+}
+
+.van-title {
+    padding-left: 25px;
+    width: 100%;
+}
+
+.van-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    padding: 25px;
+}
+
+.van-filter-button {
+    background-color: #FFEAD0;
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    padding: 6px 26px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.van-clear-filter-button {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+
+    /* Move this button to the right most possible. */
+    margin-left: auto;
+}
+
+.van-list {
+    padding: 25px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    width: 100%;
+    list-style: none;
+
+    /* van info text */
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 32px
+}
+
+ul>li>img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.van-info-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.van-name {
+    flex-grow: 1;
+}
+
+.van-price-container {
+    text-align: right;
+}
+
+.van-price-subtext {
+    line-height: 5px;
+    font-family: "Avenir Next";
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.van-tag {
+    padding: 8px 14px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.simple {
+    background-color: #E17654;
+}
+
+.rugged {
+    background-color: #115E59;
+}
+
+.luxury {
+    background-color: #161616;
+
 }
 
 
