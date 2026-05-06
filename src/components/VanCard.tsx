@@ -6,13 +6,14 @@ import { type Van } from "./Vans.tsx"
 
 interface VanCardProps {
     van: Van
+    onClick: (id: number) => void
 }
 
 export function capitalize(word: string) {
     return word.charAt(0).toUpperCase() + word.slice(1)
 }
 
-export default function VanCard({ van }: VanCardProps) {
+export default function VanCard({ van, onClick }: VanCardProps) {
 
     const tagClassNames = clsx("van-tag", {
         "simple": van.type === "simple",
@@ -22,7 +23,9 @@ export default function VanCard({ van }: VanCardProps) {
 
     return (
         <li>
-            <img src={van.imageUrl} alt={`Image for the ${van.name} van`} />
+            <button onClick={() => onClick(van.id)}>
+                <img src={van.imageUrl} alt={`Image for the ${van.name} van`} />
+            </button>
             <span className="van-info-container">
                 <span className="van-name">{van.name}</span>
                 <div className="van-price-container">

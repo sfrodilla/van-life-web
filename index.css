@@ -215,11 +215,13 @@ div.button-container>button {
     margin-left: auto;
 }
 
+/* Vans component */
+
 .van-list {
     padding: 25px;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
     width: 100%;
     list-style: none;
@@ -230,11 +232,21 @@ div.button-container>button {
     line-height: 32px
 }
 
-ul>li>img {
+/* Van Card component */
+
+ul>li>button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+ul>li>button>img {
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
+
+    cursor: pointer;
 }
 
 .van-info-container {
@@ -274,6 +286,71 @@ ul>li>img {
 
 .luxury {
     background-color: #161616;
+}
+
+/* Van Details component */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 25px;
+}
+
+.van-details-back-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.van-details-back-button {
+    background: none;
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.van-details-image {
+    margin: 40px 0px;
+    border-radius: 5px;
+    object-fit: auto;
+    width: 100%;
+}
+
+.van-details-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.van-details-name {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 42px;
+
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.van-details-price {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.van-details-rent-button {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 24px;
+    background-color: #FF8C38;
+    border: none;
+    border-radius: 5px;
+    padding: 16px 8px;
 
 }
 
